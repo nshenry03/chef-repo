@@ -44,10 +44,11 @@ The following tasks duplicate functionality from knife and may be removed in a f
 Configuration
 =============
 
-The repository uses two configuration files.
+The repository uses three configuration files.
 
 * config/rake.rb
 * .chef/knife.rb
+* Gemfile
 
 The first, `config/rake.rb` configures the Rakefile in two sections.
 
@@ -59,6 +60,10 @@ If you use the `ssl_cert` task, change the values in the `config/rake.rb` file a
 The second config file, `.chef/knife.rb` is a repository specific configuration file for knife. If you're using the Opscode Platform, you can download one for your organization from the management console. If you're using the Open Source Chef Server, you can generate a new one with `knife configure`. For more information about configuring Knife, see the Knife documentation.
 
 http://docs.opscode.com/knife.html
+
+The third config file, `Gemfile` is a repository specific configuration file for the gems used in this Chef repository.  Rather than running 'gem install x; gem install y; gem install z;' on every workstation, simply install the bundler gem and then run 'bundle install' to automatically install all of the necessary gems on a workstation.  The command is idempotent so users can call 'bundle install' again in the future to be sure they have all of the latest gems. For more information about using bundler, see the bundler documentation.
+
+http://bundler.io/
 
 Next Steps
 ==========
