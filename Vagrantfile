@@ -72,7 +72,7 @@ Vagrant.configure("2") do |config|
   #
   # config.vm.provision :chef_client do |chef|
   #   chef.chef_server_url = "https://api.opscode.com/organizations/ORGNAME"
-  #   chef.validation_key_path = "ORGNAME-validator.pem"
+  #   chef.validation_key_path = ".chef/ORGNAME-validator.pem"
   # end
   #
   # If you're using the Opscode platform, your validator client is
@@ -82,6 +82,17 @@ Vagrant.configure("2") do |config|
   # chef-validator, unless you changed the configuration.
   #
   #   chef.validation_client_name = "ORGNAME-validator"
+
+  # If you enable provisioning with the chef server, you may also want to install
+  # the 'vagrant-butcher' plugin.  It will automatically delete the node and client
+  # for you when you run 'vagrant destroy'.
+  #
+  # To install the plugin, simply run the following command:
+  #   vagrant plugin install vagrant-butcher
+  #
+  # By default, the gem looks for the Chef server settings on $HOME/.chef/knife.rb.
+  # This can be overridden by setting:
+  # config.butcher.knife_config_file = '.chef/knife.rb'
   
 	config.vm.define :precise32 do |precise32|
     # Every Vagrant virtual environment requires a box to build off of.
