@@ -99,7 +99,7 @@ The third config file, `Gemfile` is a repository specific configuration file for
 
 http://bundler.io/
 
-The fourth config file, `Vagrantfile` is a repository specific configuration file for the Vagrant tool.  All Vagrant configuration is done here. The most common configuration options are documented and commented below. For a complete reference, please see the online documentation at vagrantup.com.
+The fourth config file, `Vagrantfile` is a repository specific configuration file for the Vagrant tool.  All Vagrant configuration is done here. The most common configuration options are documented and commented below. For a complete reference, please see the online documentation at http://vagrantup.com.
 
 Next Steps
 ==========
