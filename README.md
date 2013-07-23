@@ -1,3 +1,8 @@
+Background
+==========
+
+This repository was forked from Opscode's blank Chef repository (https://github.com/opscode/chef-repo). My goal in creating this repository is to create a repository and corresponding documentation (https://github.com/nshenry03/chef-repo/wiki/Getting-Started) to help users get started in a collaborative environment with tools that are popular within the chef community.  I am trying to learn and document what I've learned as I go; if I'm not doing something *right*, or if there is a better/easier way, please let me know so I can learn and fix any issues.
+
 Overview
 ========
 
