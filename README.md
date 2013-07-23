@@ -41,14 +41,48 @@ The following tasks duplicate functionality from knife and may be removed in a f
 * `upload_cookbooks` - replaced by `knife cookbook upload -a`.
 * `upload_cookbook[cookbook]` - replaced by `knife cookbook upload COOKBOOK`.
 
+Vagrant Subcommands
+===================
+
+Vagrant provides easy to configure, reproducible, and portable work environments built on top of industry-standard technology and controlled by a single consistent workflow to help maximize the productivity and flexibility of you and your team.
+
+To achieve its magic, Vagrant stands on the shoulders of giants. Machines are provisioned on top of VirtualBox, VMware, AWS, or any other provider. Then, industry-standard provisioning tools such as shell scripts, Chef, or Puppet, can be used to automatically install and configure software on the machine.
+
+The repository contains a `Vagrantfile` that can be used to set up and manage virtual machines on your local system or in the cloud.
+
+By default, the following `boxes` are configured:
+* precise32 - Ubuntu 12.04 LTS (32-bit)
+* precise64 - Ubuntu 12.04 LTS (64-bit)
+* lucid32   - Ubuntu 10.04 LTS (32-bit)
+* lucid64   - Ubuntu 10.04 LTS (64-bit)
+
+Booting a virtual machine
+-------------------------
+Run `vagrant up <<VM Name>>`; so, for example, you could run `vagrant up precise32`.
+
+Connecting to a virtual machine
+-------------------------------
+Run `vagrant ssh <<VM Name>>`; so, for example, you could run `vagrant ssh precise32`.
+
+Stopping a virtual machine
+--------------------------
+* **Suspending** the virtual machine by calling `vagrant suspend <<VM Name>>` will save the current running state of the machine and stop it. When you're ready to begin working again, just run `vagrant up <<VM Name>>`, and it will be resumed from where you left off. The main benefit of this method is that it is super fast, usually taking only 5 to 10 seconds to stop and start your work. The downside is that the virtual machine still eats up your disk space, and requires even more disk space to store all the state of the virtual machine RAM on disk.
+
+* **Halting** the virtual machine by calling `vagrant halt <<VM Name>>` will gracefully shut down the guest operating system and power down the guest machine. You can use `vagrant up <<VM Name>>` when you're ready to boot it again. The benefit of this method is that it will cleanly shut down your machine, preserving the contents of disk, and allowing it to be cleanly started again. The downside is that it'll take some extra time to start from a cold boot, and the guest machine still consumes disk space.
+
+* **Destroying** the virtual machine by calling the `vagrant destroy <<VM Name>>` will remove all traces of the guest machine from your system. It'll stop the guest machine, power it down, and remove all of the guest hard disks. Again, when you're ready to work again, just issue a `vagrant up <<VM Name>>`. The benefit of this is that *no cruft* is left on your machine. The disk space and RAM consumed by the guest machine is reclaimed and your host machine is left clean. The downside is that vagrant up to get working again will take some extra time since it has to reimport the machine and reprovision it.
+
+For installation instructions and more information, see the Vagrant's documentation: http://docs.vagrantup.com/
+
 Configuration
 =============
 
-The repository uses three configuration files.
+The repository uses four configuration files.
 
 * config/rake.rb
 * .chef/knife.rb
 * Gemfile
+* Vagrantfile
 
 The first, `config/rake.rb` configures the Rakefile in two sections.
 
@@ -64,6 +98,8 @@ http://docs.opscode.com/knife.html
 The third config file, `Gemfile` is a repository specific configuration file for the gems used in this Chef repository.  Rather than running 'gem install x; gem install y; gem install z;' on every workstation, simply install the bundler gem and then run 'bundle install' to automatically install all of the necessary gems on a workstation.  The command is idempotent so users can call 'bundle install' again in the future to be sure they have all of the latest gems. For more information about using bundler, see the bundler documentation.
 
 http://bundler.io/
+
+The fourth config file, `Vagrantfile` is a repository specific configuration file for the Vagrant tool.  All Vagrant configuration is done here. The most common configuration options are documented and commented below. For a complete reference, please see the online documentation at vagrantup.com.
 
 Next Steps
 ==========
