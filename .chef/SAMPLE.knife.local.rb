@@ -37,11 +37,11 @@ client_key               "#{current_dir}/USERNAME.pem"                     # **C
 #  Cloud Credentials
 #-------------------------------------------------------------------------------
 
-# Amazon EC2
+# Amazon EC2 - https://github.com/opscode/knife-ec2
 # knife[:aws_access_key_id]  = "Your AWS Access Key ID"
 # knife[:aws_secret_access_key] = "Your AWS Secret Access Key"
 
-# Microsoft Azure
+# Microsoft Azure - https://github.com/opscode/knife-azure
 # knife[:azure_subscription_id] = 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
 # knife[:azure_mgmt_cert] = '/path/to/your/mgmtCert.pem'
 # knife[:azure_api_host_name] = 'management.core.windows.net'
@@ -55,35 +55,35 @@ client_key               "#{current_dir}/USERNAME.pem"                     # **C
 # knife[:tcp_endpoints]='66'
 # knife[:udp_endpoints]='77,88,99'
 
-# Bluelock
+# Bluelock - https://github.com/opscode/knife-bluelock
 # knife[:bluelock_username] = "Your Bluelock Account Username"
 # knife[:bluelock_password] = "Your Bluelock Account Password"
 
-# Eucalyptus
+# Eucalyptus - https://github.com/opscode/knife-eucalyptus
 # knife[:euca_access_key_id]     = "Your Eucalyptus Access Key ID"
 # knife[:euca_secret_access_key] = "Your Eucalyptus Secret Access Key"
 # knife[:euca_api_endpoint]      = "http://ecc.eucalyptus.com:8773/services/Eucalyptus"
 
-# HP Cloud
+# HP Cloud - https://github.com/opscode/knife-hp
 # knife[:hp_access_key] = "Your HP Cloud Access Key ID"
 # knife[:hp_secret_key] = "Your HP Cloud Secret Key"
 # knife[:hp_tenant_id]  = "Your HP Cloud Tenant ID"
 # knife[:hp_auth_uri]   = "Your HP Cloud Auth URI" (optional, default is 'https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/')
 # knife[:hp_avl_zone]   = "Your HP Cloud Availability Zone" (optional, default is 'az1', choices are 'az1', 'az2' or 'az3')
 
-# Linode
+# Linode - https://github.com/opscode/knife-linode
 # knife[:linode_api_key] = "Your Linode API Key"
 
-# OpenStack
+# OpenStack - https://github.com/opscode/knife-openstack
 # knife[:openstack_username] = "Your OpenStack Dashboard username"
 # knife[:openstack_password] = "Your OpenStack Dashboard password"
 # knife[:openstack_auth_url] = "http://cloud.mycompany.com:5000/v2.0/tokens" # Note: If you are not proxying HTTPS to the OpenStack auth port, the scheme should be HTTP
 # knife[:openstack_tenant] = "Your OpenStack tenant name"
 
-# Rackspace
+# Rackspace - https://github.com/opscode/knife-rackspace
 # knife[:rackspace_api_username] = "Your Rackspace API username"
 # knife[:rackspace_api_key] = "Your Rackspace API Key"
 
-# Terremark
+# Terremark - https://github.com/opscode/knife-terremark
 # knife[:terremark_username] = "Your Terremark Account Username"
 # knife[:terremark_password] = "Your Terremark Account Password"
