@@ -6,3 +6,9 @@
 .chef/*.pem
 .chef/knife.local.rb
 .chef/encrypted_data_bag_secret
+
+###
+# Ignore Librarian-Chef Files and Directories
+###
+/cookbooks
+/tmp

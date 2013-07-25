@@ -1,9 +1,9 @@
 source "https://rubygems.org"
 
 #-------------------------------------------------------------------------------
-#  Tools for managing cookbooks - berkshelf.com
+#  Tools for managing cookbooks - github.com/applicationsonline/librarian-chef
 #-------------------------------------------------------------------------------
-gem "berkshelf"
+gem "librarian-chef"
 
 
 #-------------------------------------------------------------------------------
