@@ -31,7 +31,7 @@ client_key               "#{current_dir}/USERNAME.pem"                     # **C
 #-------------------------------------------------------------------------------
 
 # The path to the file that contains the encryption key. IMPORTANT: Make sure that you tell your VCS to ignore this file. If you use git, it has already been ignored.
-# encrypted_data_bag_secret "#{current_dir}/encrypted_data_bag_secret"
+# knife[:secret_file] = "#{current_dir}/encrypted_data_bag_secret"
 
 #-------------------------------------------------------------------------------
 #  Cloud Credentials
