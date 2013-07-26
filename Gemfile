@@ -11,20 +11,20 @@ gem "librarian-chef"
 #-------------------------------------------------------------------------------
 
 # Tools for interacting with cloud nodes
-# knife-azure							# For more information, see: https://github.com/opscode/knife-azure
-# knife-bluebox						# For more information, see: https://github.com/opscode/knife-bluebox
-# knife-bluelock					# For more information, see: https://github.com/opscode/knife-bluelock
-# knife-cloud							# For more information, see: https://github.com/opscode/knife-cloud
-# knife-ec2								# For more information, see: https://github.com/opscode/knife-ec2
-# knife-eucalyptus				# For more information, see: https://github.com/opscode/knife-eucalyptus
-# knife-google						# For more information, see: https://github.com/opscode/knife-google
-# knife-hp								# For more information, see: https://github.com/opscode/knife-hp
-# knife-linode						# For more information, see: https://github.com/opscode/knife-linode
-# knife-openstack					# For more information, see: https://github.com/opscode/knife-openstack
-# knife-rackspace					# For more information, see: https://github.com/opscode/knife-rackspace
-# knife-slicehost					# For more information, see: https://github.com/opscode/knife-slicehost
-# knife-terremark					# For more information, see: https://github.com/opscode/knife-terremark
-# knife-vcloud						# For more information, see: https://github.com/opscode/knife-vcloud
+# gem 'knife-azure'          # For more information, see: https://github.com/opscode/knife-azure
+# gem 'knife-bluebox'        # For more information, see: https://github.com/opscode/knife-bluebox
+# gem 'knife-bluelock'       # For more information, see: https://github.com/opscode/knife-bluelock
+# gem 'knife-cloud'          # For more information, see: https://github.com/opscode/knife-cloud
+# gem 'knife-ec2'            # For more information, see: https://github.com/opscode/knife-ec2
+# gem 'knife-eucalyptus'     # For more information, see: https://github.com/opscode/knife-eucalyptus
+# gem 'knife-google'         # For more information, see: https://github.com/opscode/knife-google
+# gem 'knife-hp'             # For more information, see: https://github.com/opscode/knife-hp
+# gem 'knife-linode'         # For more information, see: https://github.com/opscode/knife-linode
+# gem 'knife-openstack'      # For more information, see: https://github.com/opscode/knife-openstack
+# gem 'knife-rackspace'      # For more information, see: https://github.com/opscode/knife-rackspace
+# gem 'knife-slicehost'      # For more information, see: https://github.com/opscode/knife-slicehost
+# gem 'knife-terremark'      # For more information, see: https://github.com/opscode/knife-terremark
+# gem 'knife-vcloud'         # For more information, see: https://github.com/opscode/knife-vcloud
 
 # Tools for interacting with Windows nodes
-# knife-windows						# For more information, see: https://github.com/opscode/knife-windows
+# gem 'knife-windows'        # For more information, see: https://github.com/opscode/knife-windows
