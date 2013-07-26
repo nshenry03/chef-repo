@@ -12,3 +12,8 @@
 ###
 /cookbooks
 /tmp
+
+###
+# Ignore Vagrant Files and Directories
+###
+/.vagrant
