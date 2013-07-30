@@ -26,12 +26,6 @@ node_name                "USERNAME"                                        # **C
 # The location of the file which contains the client key.
 client_key               "#{current_dir}/USERNAME.pem"                     # **CHANGE REQUIRED**
 
-#-------------------------------------------------------------------------------
-#  LOCAL Data Bag Encryption Configuration
-#-------------------------------------------------------------------------------
-
-# The path to the file that contains the encryption key. IMPORTANT: Make sure that you tell your VCS to ignore this file. If you use git, it has already been ignored.
-# knife[:secret_file] = "#{current_dir}/encrypted_data_bag_secret"
 
 #-------------------------------------------------------------------------------
 #  Cloud Credentials
