@@ -145,10 +145,10 @@ Vagrant.configure("2") do |config|
 
 	config.vm.define :centos5 do |centos5|
     # Every Vagrant virtual environment requires a box to build off of.
-    centos5-64.vm.box = "centos5-64"
+    centos5.vm.box = "centos5"
   
-    # The url from where the 'centos5-64.vm.box' box will be fetched if it
+    # The url from where the 'centos5.vm.box' box will be fetched if it
     # doesn't already exist on the user's system.
-    centos5-64.vm.box_url = "https://opscode-vm-bento.s3.amazonaws.com/vagrant/opscode_centos-5.9_provisionerless.box"
+    centos5.vm.box_url = "https://opscode-vm-bento.s3.amazonaws.com/vagrant/opscode_centos-5.9_provisionerless.box"
   end
 end
