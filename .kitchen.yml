@@ -1,0 +1,27 @@
+---
+driver_plugin: vagrant
+driver_config:
+  require_chef_omnibus: true
+
+platforms:
+- name: precise64
+  driver_config:
+    box: precise64
+    box_url: http://files.vagrantup.com/precise64.box
+- name: lucid64
+  driver_config:
+    box: lucid64
+    box_url: http://files.vagrantup.com/lucid64.box
+- name: centos6-64
+  driver_config:
+    box: centos6-64
+    box_url: https://opscode-vm-bento.s3.amazonaws.com/vagrant/opscode_centos-6.4_provisionerless.box
+- name: centos5-64
+  driver_config:
+    box: centos5-64
+    box_url: https://opscode-vm-bento.s3.amazonaws.com/vagrant/opscode_centos-5.9_provisionerless.box
+
+suites:
+- name: default
+  run_list: []
+  attributes: {}

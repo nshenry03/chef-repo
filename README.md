@@ -82,12 +82,13 @@ For installation instructions and more information, see the Vagrant's documentat
 Configuration
 =============
 
-The repository uses four configuration files.
+The repository uses five configuration files.
 
 * config/rake.rb
 * .chef/knife.rb
 * Gemfile
 * Vagrantfile
+* .kitchen.yml
 
 The first, `config/rake.rb` configures the Rakefile in two sections.
 
@@ -104,7 +105,10 @@ The third config file, `Gemfile` is a repository specific configuration file for
 
 http://bundler.io/
 
-The fourth config file, `Vagrantfile` is a repository specific configuration file for the Vagrant tool.  All Vagrant configuration is done here. The most common configuration options are documented and commented below. For a complete reference, please see the online documentation at http://vagrantup.com.
+The fourth config file, `Vagrantfile` is a repository specific configuration file for the Vagrant tool. All Vagrant configuration is done here. For a complete reference, please see the online documentation at http://vagrantup.com.
+
+
+The fifth config file, `.kitchen.yml` is a repository specific configuration file for the Test Kitchen tool. For a complete reference, please see the online documentation at https://github.com/opscode/test-kitchen.
 
 Next Steps
 ==========

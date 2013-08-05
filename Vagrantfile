@@ -133,4 +133,22 @@ Vagrant.configure("2") do |config|
     # doesn't already exist on the user's system.
     lucid64.vm.box_url = "http://files.vagrantup.com/lucid64.box"
   end
+
+	config.vm.define :centos6 do |centos6|
+    # Every Vagrant virtual environment requires a box to build off of.
+    centos6.vm.box = "centos6"
+  
+    # The url from where the 'centos6.vm.box' box will be fetched if it
+    # doesn't already exist on the user's system.
+    centos6.vm.box_url = "https://opscode-vm-bento.s3.amazonaws.com/vagrant/opscode_centos-6.4_provisionerless.box"
+  end
+
+	config.vm.define :centos5 do |centos5|
+    # Every Vagrant virtual environment requires a box to build off of.
+    centos5-64.vm.box = "centos5-64"
+  
+    # The url from where the 'centos5-64.vm.box' box will be fetched if it
+    # doesn't already exist on the user's system.
+    centos5-64.vm.box_url = "https://opscode-vm-bento.s3.amazonaws.com/vagrant/opscode_centos-5.9_provisionerless.box"
+  end
 end

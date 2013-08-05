@@ -17,3 +17,9 @@
 # Ignore Vagrant Files and Directories
 ###
 /.vagrant
+
+###
+# Ignore Test Kitchen Files and Directories
+###
+.kitchen/
+.kitchen.local.yml
