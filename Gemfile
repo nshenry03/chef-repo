@@ -13,6 +13,7 @@ gem 'test-kitchen', '~> 1.0.0.beta'
 gem 'kitchen-vagrant', :group => :integration
 gem 'foodcritic'
 gem 'tailor'
+gem 'flay'
 
 
 #-------------------------------------------------------------------------------

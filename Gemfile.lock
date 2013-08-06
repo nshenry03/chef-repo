@@ -20,6 +20,9 @@ GEM
       yajl-ruby (~> 1.1)
     coderay (1.0.9)
     erubis (2.7.0)
+    flay (2.4.0)
+      ruby_parser (~> 3.0)
+      sexp_processor (~> 4.0)
     foodcritic (2.2.0)
       erubis
       gherkin (~> 2.11.7)
@@ -74,7 +77,10 @@ GEM
       slop (~> 3.4)
     rest-client (1.6.7)
       mime-types (>= 1.16)
+    ruby_parser (3.2.2)
+      sexp_processor (~> 4.1)
     safe_yaml (0.9.4)
+    sexp_processor (4.2.1)
     slop (3.4.6)
     systemu (2.5.2)
     tailor (1.2.1)
@@ -104,6 +110,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  flay
   foodcritic
   kitchen-vagrant
   librarian-chef
