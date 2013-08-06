@@ -15,6 +15,7 @@ gem 'foodcritic'
 gem 'tailor'
 gem 'flay'
 gem 'flog'
+gem 'strainer'
 
 
 #-------------------------------------------------------------------------------
