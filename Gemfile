@@ -14,6 +14,7 @@ gem 'kitchen-vagrant', :group => :integration
 gem 'foodcritic'
 gem 'tailor'
 gem 'flay'
+gem 'flog'
 
 
 #-------------------------------------------------------------------------------
