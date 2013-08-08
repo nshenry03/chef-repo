@@ -101,6 +101,7 @@ Vagrant.configure("2") do |config|
 	config.vm.define :precise32 do |precise32|
     # Every Vagrant virtual environment requires a box to build off of.
     precise32.vm.box = "precise32"
+    precise32.vm.hostname = "precise32"
   
     # The url from where the 'precise32.vm.box' box will be fetched if it
     # doesn't already exist on the user's system.
@@ -110,6 +111,7 @@ Vagrant.configure("2") do |config|
 	config.vm.define :precise64 do |precise64|
     # Every Vagrant virtual environment requires a box to build off of.
     precise64.vm.box = "precise64"
+    precise64.vm.hostname = "precise64"
   
     # The url from where the 'precise64.vm.box' box will be fetched if it
     # doesn't already exist on the user's system.
@@ -119,6 +121,7 @@ Vagrant.configure("2") do |config|
 	config.vm.define :lucid32 do |lucid32|
     # Every Vagrant virtual environment requires a box to build off of.
     lucid32.vm.box = "lucid32"
+    lucid32.vm.hostname = "lucid32"
   
     # The url from where the 'lucid32.vm.box' box will be fetched if it
     # doesn't already exist on the user's system.
@@ -128,6 +131,7 @@ Vagrant.configure("2") do |config|
 	config.vm.define :lucid64 do |lucid64|
     # Every Vagrant virtual environment requires a box to build off of.
     lucid64.vm.box = "lucid64"
+    lucid64.vm.hostname = "lucid64"
   
     # The url from where the 'lucid64.vm.box' box will be fetched if it
     # doesn't already exist on the user's system.
@@ -137,6 +141,7 @@ Vagrant.configure("2") do |config|
 	config.vm.define :centos6 do |centos6|
     # Every Vagrant virtual environment requires a box to build off of.
     centos6.vm.box = "centos6"
+    centos6.vm.hostname = "centos6"
   
     # The url from where the 'centos6.vm.box' box will be fetched if it
     # doesn't already exist on the user's system.
@@ -146,6 +151,7 @@ Vagrant.configure("2") do |config|
 	config.vm.define :centos5 do |centos5|
     # Every Vagrant virtual environment requires a box to build off of.
     centos5.vm.box = "centos5"
+    centos5.vm.hostname = "centos5"
   
     # The url from where the 'centos5.vm.box' box will be fetched if it
     # doesn't already exist on the user's system.
